@@ -6,7 +6,7 @@
 /*   By: yait-iaz <yait-iaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/06 14:51:38 by yait-iaz          #+#    #+#             */
-/*   Updated: 2022/01/11 20:23:44 by yait-iaz         ###   ########.fr       */
+/*   Updated: 2022/01/12 13:41:17 by yait-iaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,7 @@ void	value_sitting(t_display *mlx)
 	mlx->zoom_y = 2.0;
 	mlx->xcord = 0.0;
 	mlx->ycord = 0.0;
-	mlx->max_it = 40;
+	mlx->max_it = 60;
 	mlx->position = 1;
 	mlx->h = 1;
 	mlx->color->startr = 0;
