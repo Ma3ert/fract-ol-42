@@ -6,7 +6,7 @@
 /*   By: yait-iaz <yait-iaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/06 15:45:42 by yait-iaz          #+#    #+#             */
-/*   Updated: 2022/01/11 20:24:40 by yait-iaz         ###   ########.fr       */
+/*   Updated: 2022/01/15 20:45:30 by yait-iaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -103,6 +103,7 @@ int			hundle_no_event(t_display *mlx);
 int			mouse_cord(int x, int y, t_display *mlx);
 void		hundle_key_event(int keysym, t_display *mlx);
 void		hundle_mouse_event(int button, int x, int y, t_display *mlx);
+int			red_cross(t_display *mlx);
 void		ft_help(t_display *mlx);
 
 #endif
