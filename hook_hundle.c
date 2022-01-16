@@ -6,7 +6,7 @@
 /*   By: yait-iaz <yait-iaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/06 15:04:51 by yait-iaz          #+#    #+#             */
-/*   Updated: 2022/01/15 20:44:53 by yait-iaz         ###   ########.fr       */
+/*   Updated: 2022/01/16 14:02:29 by yait-iaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ int	mouse_cord(int x, int y, t_display *mlx)
 {
 	if (mlx->position == 1)
 	{
-		if ((x <= 1080 && x >= 0) || (y <= 1080 && y >= 0))
+		if ((x <= SIDE && x >= 0) || (y <= SIDE && y >= 0))
 		{
 			mlx->xcord = ((x * mlx->xscale) - mlx->zoom_x);
 			mlx->ycord = ((y * mlx->yscale) - mlx->zoom_y);
@@ -71,13 +71,13 @@ void	hundle_key_event(int keysym, t_display *mlx)
 	else if (keysym == 45)
 		mlx->color->endb += 100;
 	else if (keysym == 124)
-		mlx->zoom_x -= 0.01;
+		mlx->zoom_x -= 20 * mlx->xscale;
 	else if (keysym == 123)
-		mlx->zoom_x += 0.01;
+		mlx->zoom_x += 20 * mlx->xscale;
 	else if (keysym == 126)
-		mlx->zoom_y += 0.01;
+		mlx->zoom_y += 20 * mlx->yscale;
 	else if (keysym == 125)
-		mlx->zoom_y -= 0.01;
+		mlx->zoom_y -= 20 * mlx->yscale;
 }
 
 void	hundle_mouse_event(int button, int x, int y, t_display *mlx)
